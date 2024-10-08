@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>青橙时光</title>
+<meta name="keywords" content="青橙导航-个人导航主页">
+<meta name="description" content="青橙时光 青出于蓝">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="./static/img/logo/qclogo.png">
+<link href="qc.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+<div class="con">
+  <div class="header">
+    <div class="headerlogo"><img src="static/img/logo/qcsgw40.png" alt="" height="28"></div>
+    <div id="time-display"></div>
+    <button id="mode-toggle-btn" class="mode-toggle"><i id="mode-toggle-icon" class="fas fa-sun"></i></button>
+    <div class="headertag">
+      <nav>
+        <ul>
+          <li><a href="http://192.168.1.1/CU.html" target="_blank" title="光猫"><img src="static/img/iconW/网关.png" alt="" align="absmiddle" height="25" width="25"></a>
+          </li>
+          <li><a href="http://op.zg1029.top/" target="_blank" title="OpenWrt"><img src="static/img/iconW/openwrt.png" alt="" align="absmiddle" height="25" width="25"></a>
+          </li>
+          <li><a href="http://192.168.29.105/" target="_blank" title="MiWiFi"><img src="static/img/iconW/wifi.png" alt="" align="absmiddle" height="25" width="25"></a>
+          </li>
+          <li><a href="http://qts.zg1029.top:5000/cgi-bin/" target="_blank" title="QTS"><img src="static/img/iconW/NAS.png" alt="" align="absmiddle" height="25" width="25"></a>
+          </li>
+          <li><a href="http://www.test-ipv6.com/" target="_blank" title="IPv6测试"><img src="static/img/iconW/IPv6.png" alt="" align="absmiddle" height="25" width="25"></a>
+          </li>
+          <li><a href="https://ping.chinaz.com/zg1029.top" target="_blank" title="站长ping"><img src="static/img/iconW/zzping.png" alt="" align="absmiddle" height="25" width="25"></a>
+          </li>
+          <li><a href="https://www.speedtest.net/" target="_blank" title="Speedtest"><img src="static/img/iconW/speedtest.png" alt="" align="absmiddle" height="25" width="25"></a>
+          </li>
+          <li><a href="https://amatrixap.com/" target="_blank" title="MaTrix"><img src="static/img/iconW/飞机.png" alt="" align="absmiddle" height="25" width="25"></a>
+          </li>
+          <li><a href="https://account.aliyun.com/" target="_blank" title="阿里云"><img src="static/img/iconW/ali.png" alt="" align="absmiddle" height="25" width="25"></a>
+          </li>
+          <li><a href="https://al.zg1029.top/qcsg1107" target="_blank" title="宝塔面板"><img src="static/img/iconW/bt.png" alt="" align="absmiddle" height="25" width="25"></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+<main id="main-content">
+    <!-- slogan start -->
+    <div class="slogan"><img src="static/img/logo/qcsg.png" alt="" height="120"></div>
+    <!-- slogan end -->
+    
+    <!-- 搜索框 start -->
+    <div class="search">
+      <div id="search_form" class="search-section" target="_blank">
+        <div class="search-left">
+          <div id="search_logo" data-type="google" class="search-logo baidu"></div>
+          <div class="input-wrap">
+            <input id="search_keyword" class="search-input" name="keyword" maxlength="100" autocomplete="off" type="text" placeholder="去谷歌百度一下！">
+            <div class="clear-keyword" id="clear_keyword" title="清空">x</div>
+          </div>
+          <!--  搜索引擎 start  -->
+          <ul id="search_methods" class="search-methods">
+            <li data-type="google" class="search-item google">谷歌</li>
+            <li data-type="baidu" class="search-item baidu">百度</li>
+            <li data-type="bing" class="search-item bing">必应</li>
+            <li data-type="sogou" class="search-item sogou">搜狗</li>
+            <li data-type="mcwiki" class="search-item mc">MC</li>
+          </ul>
+          <!--  搜索引擎 end  -->
+          <!--  搜索结果 start -->
+          <ul id="search_result" class="search-result">
+            <!--<li class="result-item"></li>-->
+          </ul>
+          <!--  搜索结果 end -->
+        </div>
+        <input class="search-submit" value="青橙一下" id="search_submit" type="submit">
+      </div>
+    </div>
+    <!-- 搜索框 end -->
+    
+    <!-- 常用地址 start -->
+    <div class="changyong">
+      <div class="cy-tag">
+        <div class="kj-c">
+          <a href="https://dh.zg1029.top/" target="_blank" class="jj-list-link2"><img src="static/img/logo/qclogo200.png" alt="" class="kj-con"/><br>
+          导航3.0</a>
+        </div>
+        <div class="kj-c">
+          <a href="https://scm.ysbang.cn/provider.php/admin" target="_blank" class="jj-list-link2"><img src="static/img/icon/ysb.png" alt="" class="kj-con"/><br>
+          药师帮</a>
+        </div>
+        <div class="kj-c">
+          <a href="https://www.youtube.com/" target="_blank" class="jj-list-link2"><img src="static/img/icon/youtube.png" alt="" class="kj-con"/><br>
+          Youtube</a>
+        </div>
+        <div class="kj-c">
+          <a href="https://www.bilibili.com/" target="_blank" class="jj-list-link2"><img src="static/img/icon/bilibili.png" alt="" class="kj-con"/><br>
+          bilibili</a>
+        </div>
+        <div class="kj-c">
+          <a href="https://www.ygdy8.net/" target="_blank" class="jj-list-link2"><img src="static/img/icon/dyxz.png" alt="" class="kj-con"/><br>
+          阳光电影</a>
+        </div>
+        <div class="kj-c">
+          <a href="https://sticker.weixin.qq.com/" target="_blank" class="jj-list-link2"><img src="static/img/icon/wxbq.png" alt="" class="kj-con"/><br>
+          微信表情</a>
+        </div>
+        <div class="kj-c">
+          <a href="https://al.zg1029.top/qcsg1107" target="_blank" class="jj-list-link2"><img src="static/img/icon/bt.png" alt="" class="kj-con"/><br>
+          宝塔面板</a>
+        </div>
+        <div class="kj-c">
+          <a href="https://www.zhihu.com/" target="_blank" class="jj-list-link2"><img src="static/img/icon/zhihu.png" alt="" class="kj-con"/><br>
+          知乎</a>
+        </div>
+        <div class="kj-c">
+          <a href="https://minecraft.fandom.com/zh/wiki/%E6%95%99%E7%A8%8B" target="_blank" class="jj-list-link2"><img src="static/img/icon/mc_Wiki.png" alt="" class="kj-con"/><br>
+          MC&nbsp;wiki</a>
+        </div>
+        <div class="kj-c">
+          <a href="https://code.fittentech.com/playground_zh" target="_blank" class="jj-list-link2"><img src="static/img/icon/fitten.png" alt="" class="kj-con"/><br>
+          Fitten</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- 常用地址 end -->
+    
+    <!-- 展开导航 start -->
+    <div>
+      <button style="font-size: medium" onclick="toggleSection('section1')">展开</button>
+      <div id="section1" class="hidden">
+        <!-- 导航地址 start -->
+        <div class="container">
+          <div class="category">
+            <h2>常用网站</h2>
+            <div class="links"><a href="https://yt.zg1029.top/" target="_blank">
+              <div class="linklogo"></div>
+              <div class="text">
+                <div class="title">祎婷导航</div>
+                <div class="description">祎婷的导航</div>
+              </div>
+              </a>
+              <a href="https://wx.qq.com/" target="_blank">
+              <img src="static/img/icon/Weixin.png" alt="" class="linklogo"/>
+              <div class="text">
+                <div class="title">微信网页版</div>
+              </div>
+              </a>
+              <a href="https://channels.weixin.qq.com/" target="_blank">
+              <div class="text">
+                <div class="title">视频号助手</div>
+              </div>
+              </a>
+              <a href="http://fanyi.youdao.com/" target="_blank">
+              <div class="text">
+                <div class="title">有道翻译</div>
+              </div>
+              </a>
+              <a href="https://www.quora.com/" target="_blank">
+              <div class="text">
+                <div class="title">quora</div>
+              </div>
+              </a>
+              <a href="https://www.maoken.com/all-fonts-imgs" ADD_DATE="1680030286" target="_blank">
+              <div class="text">
+                <div class="title">猫啃网</div>
+              </div>
+              </a>
+              <a href="https://translate.google.com/" target="_blank">
+              <div class="text">
+                <div class="title">谷歌翻译</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          <!-- 分类分割线 -->
+          <div class="category">
+            <h2>电商后台</h2>
+            <div class="links">
+              <a href="https://scm.ysbang.cn/provider.php/admin" target="_blank">
+              <img src="static/img/icon/ysb.png" alt="" class="linklogo"/>
+              <div class="text">
+                <div class="title">药师帮</div>
+                <div class="description">药师帮后台</div>
+              </div>
+              </a>
+              <a href="https://mms.pinduoduo.com/home/" target="_blank">
+              <img src="static/img/icon/pddsj.png" alt="" class="linklogo"/>
+              <div class="text">
+                <div class="title">拼多多商家</div>
+                <div class="description">拼多多商家后台</div>
+              </div>
+              </a>
+              <a href="https://fw.jd.com/market/new/index" target="_blank">
+              <img src="static/img/icon/jm.png" alt="" class="linklogo"/>
+              <div class="text">
+                <div class="title">京麦</div>
+                <div class="description">京东小店后台</div>
+              </div>
+              </a>
+              <a href="https://fxg.jinritemai.com/ffa/grs/settle/chooserole?btm_pre=a2427.b0&amp;btm_ppre=/" target="_blank">
+              <div class="text">
+                <div class="title">抖店</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          <!-- 分类分割线 -->
+          <div class="category">
+            <h2>官方查询</h2>
+            <div class="links">
+              <a href="https://www.gsxt.gov.cn/" target="_blank">
+              <div class="text">
+                <div class="title">企业信息检索</div>
+              </div>
+              </a>
+              <a href="https://sbj.cnipa.gov.cn/sbj/sbcx/" target="_blank">
+              <div class="text">
+                <div class="title">商标查询</div>
+              </div>
+              </a>
+              <a href="https://spaqjg.e-cqs.cn/spscxk/" target="_blank">
+              <div class="text">
+                <div class="title">食品生产许可查询</div>
+              </div>
+              </a>
+              <a href="http://bzdt.ch.mnr.gov.cn/" ADD_DATE="1680021539" target="_blank">
+              <div class="text">
+                <div class="title">标准地图服务系统</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          <!-- 分类分割线 -->
+          <div class="category">
+            <h2>信息检索</h2>
+            <div class="links">
+              <a href="http://www.iplant.cn/" target="_blank">
+              <div class="text">
+                <div class="title">植物智</div>
+              </div>
+              </a>
+              <a href="http://eye.kuyun.com/" target="_blank">
+              <div class="text">
+                <div class="title">酷云EYE</div>
+              </div>
+              </a>
+              <a href="https://piaofang.maoyan.com/dashboard/" target="_blank">
+              <div class="text">
+                <div class="title">猫眼票房</div>
+              </div>
+              </a>
+              <a href="https://movie.douban.com/" target="_blank">
+              <div class="text">
+                <div class="title">豆瓣电影</div>
+              </div>
+              </a>
+              <a href="https://map.bmcx.com/" target="_blank">
+              <div class="text">
+                <div class="title">便民查询网地图</div>
+              </div>
+              </a>
+              <a href="https://www.bmcx.com/" target="_blank">
+              <div class="text">
+                <div class="title">便民查询网</div>
+              </div>
+              </a>
+              <a href="https://www.allhistory.com/" target="_blank">
+              <div class="text">
+                <div class="title">全历史</div>
+              </div>
+              </a>
+              <a href="http://www.jianpu.cn/" target="_blank">
+              <div class="text">
+                <div class="title">简谱网</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          <!-- 分类分割线 -->
+          <div class="category">
+            <h2>在线工具</h2>
+            <div class="links">
+              <a href="https://docsmall.com/gif-compress/" target="_blank">
+              <div class="text">
+                <div class="title">GIF压缩</div>
+              </div>
+              </a>
+              <a href="http://ncm.worthsee.com/" target="_blank">
+              <div class="text">
+                <div class="title">NCM转换</div>
+              </div>
+              </a>
+              <a href="https://convertio.co/zh//" target="_blank">
+              <div class="text">
+                <div class="title">文件转换器</div>
+              </div>
+              </a>
+              <a href="https://www.processon.com/diagrams" target="_blank">
+              <div class="text">
+                <div class="title">思维导图</div>
+              </div>
+              </a>
+              <a href="http://seal.ssjjss.com/" target="_blank">
+              <div class="text">
+                <div class="title">印章工具</div>
+              </div>
+              </a>
+              <a href="https://cli.im/" target="_blank">
+              <div class="text">
+                <div class="title">二维码生成</div>
+              </div>
+              </a>
+              <a href="https://snapdrop.net/" target="_blank">
+              <div class="text">
+                <div class="title">局域网传输</div>
+              </div>
+              </a>
+              <a href="https://www.alltoall.net/" target="_blank">
+              <div class="text">
+                <div class="title">all to all万能格式转换</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          <!-- 分类分割线 -->
+          <div class="category">
+            <h2>图片素材</h2>
+            <div class="links"><a href="https://www.51yuansu.com/" target="_blank">
+              <img src="static/img/icon/mys.png" alt="" class="linklogo"/>
+              <div class="text">
+                <div class="title">觅元素</div>
+                <div class="description">免扣元素</div>
+              </div>
+              </a>
+              <a href="https://www.58pic.com/" target="_blank">
+              <img src="static/img/icon/qt.png" alt="千" class="linklogo"/>
+              <div class="text">
+                <div class="title">千图网</div>
+                <div class="description">图片素材</div>
+              </div>
+              </a>
+              <a href="https://699pic.com/video/" target="_blank">
+              <div class="text">
+                <div class="title">摄图网</div>
+              </div>
+              </a>
+              <a href="https://www.hituyu.com/" ADD_DATE="1680016517" target="_blank">
+              <div class="text">
+                <div class="title">底纹素材</div>
+              </div>
+              </a>
+              <a href="https://www.freepik.com/" ADD_DATE="1680016627" target="_blank">
+              <div class="text">
+                <div class="title">freepik</div>
+              </div>
+              </a>
+              <a href="https://www.iconfont.cn/" ADD_DATE="1680026334" target="_blank">
+              <div class="text">
+                <div class="title">阿里图标</div>
+              </div>
+              </a>
+              <a href="https://www.sigoo.com/" ADD_DATE="1720101791" target="_blank">
+              <div class="text">
+                <div class="title">极像素</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          <!-- 分类分割线 -->
+          <div class="category">
+            <h2>视频素材</h2>
+            <div class="links">
+              <a href="https://www.xinpianchang.com/" target="_blank">
+              <div class="text">
+                <div class="title">新片场</div>
+              </div>
+              </a>
+              <a href="https://www.newcger.com/" target="_blank">
+              <div class="text">
+                <div class="title">新CG儿</div>
+              </div>
+              </a>
+              <a href="https://www.vjshi.com/" target="_blank">
+              <div class="text">
+                <div class="title">VJ光厂</div>
+              </div>
+              </a>
+              <a href="https://www.beeple-crap.com/vjloops" target="_blank">
+              <div class="text">
+                <div class="title">beeple</div>
+                <div class="description">循环VJ背景</div>
+              </div>
+              </a>
+              <a href="https://www.pexels.com/videos/" ADD_DATE="1680025461" target="_blank">
+              <div class="text">
+                <div class="title">Pexels</div>
+              </div>
+              </a>
+              <a href="https://pixabay.com/zh/videos/" ADD_DATE="1680025506" target="_blank">
+              <div class="text">
+                <div class="title">pixabay</div>
+              </div>
+              </a>
+              <a href="https://mixkit.co/" ADD_DATE="1680025685" target="_blank">
+              <div class="text">
+                <div class="title">Mixkit</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          <!-- 分类分割线 -->
+          <div class="category">
+            <h2>音乐音效</h2>
+            <div class="links">
+              <a href="https://www.ear0.com/" ADD_DATE="1680030156" target="_blank">
+              <div class="text">
+                <div class="title">耳聆网 - 听见世界之美</div>
+              </div>
+              </a>
+              <a href="https://www.audiolibrary.com.co/" ADD_DATE="1680030183" target="_blank">
+              <div class="text">
+                <div class="title">Audio Library · No Copyright Music</div>
+              </div>
+              </a>
+              <a href="https://www.tosound.com/" ADD_DATE="1680030245" target="_blank">
+              <div class="text">
+                <div class="title">淘声网 - toSound声音搜索引擎</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          <!-- 分类分割线 -->
+          <div class="category">
+            <h2>下载工具</h2>
+            <div class="links">
+              <a href="https://www.flvcd.com/" target="_blank">
+              <div class="text">
+                <div class="title">硕鼠</div>
+              </div>
+              </a>
+              <a href="http://zhouql.vip/bilibili/" target="_blank">
+              <div class="text">
+                <div class="title">B站视频下载</div>
+              </div>
+              </a>
+              <a href="https://save.tube/" ADD_DATE="1720613966" target="_blank">
+              <div class="text">
+                <div class="title">YouTube下载</div>
+              </div>
+              </a>
+              <a href="https://www.9xyoutube.com/watch?v=" ADD_DATE="1720614049" target="_blank">
+              <div class="text">
+                <div class="title">YouTube下载9X</div>
+              </div>
+              </a>
+              <a href="http://clb06.one/" ADD_DATE="1704477467" target="_blank">
+              <div class="text">
+                <div class="title">磁力宝</div>
+              </div>
+              </a>
+              <a href="https://www.xiaobaipan.com/" ADD_DATE="1704814600" target="_blank">
+              <div class="text">
+                <div class="title">小白盘</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          <!-- 分类分割线 -->
+          <div class="category">
+            <h2>工具导航</h2>
+            <div class="links">
+              <a href="https://hrc8.net/" target="_blank">
+              <div class="text">
+                <div class="title">花容村口</div>
+              </div>
+              </a>
+              <a href="https://tool.lu/" target="_blank">
+              <div class="text">
+                <div class="title">在线工具集合</div>
+              </div>
+              </a>
+              <a href="https://uiiiuiii.com/tools" target="_blank">
+              <div class="text">
+                <div class="title">神器集合</div>
+              </div>
+              </a>
+              <a href="https://xiaomark.com/tool" target="_blank">
+              <div class="text">
+                <div class="title">运营工具大全</div>
+              </div>
+              </a>
+              <a href="https://www.vlogquan.com/" target="_blank">
+              <div class="text">
+                <div class="title">简视频</div>
+              </div>
+              </a>
+              <a href="https://www.91sotu.com/" target="_blank">
+              <div class="text">
+                <div class="title">搜图导航</div>
+              </div>
+              </a>
+              <a href="http://hao.shejidaren.com/" target="_blank">
+              <div class="text">
+                <div class="title">设计导航</div>
+              </div>
+              </a>
+              <a href="https://www.gaoding.com/" target="_blank">
+              <div class="text">
+                <div class="title">稿定设计</div>
+              </div>
+              </a>
+              <a href="https://www.xiaozhongjishu.com/" target="_blank">
+              <div class="text">
+                <div class="title">小众技术导航</div>
+              </div>
+              </a>
+              <a href="https://xiangjianan.gitee.io/lks/" target="_blank">
+              <div class="text">
+                <div class="title">Lks</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          <!-- 分类分割线 -->
+          <div class="category">
+            <h2>影视资源</h2>
+            <div class="links">
+              <a href="https://kpkuang.fun/" target="_blank">
+              <div class="text">
+                <div class="title">看片狂人</div>
+              </div>
+              </a>
+              <a href="http://258.tv/" target="_blank">
+              <div class="text">
+                <div class="title">蓝光3D电影下载</div>
+              </div>
+              </a>
+              <a href="https://www.4k123.com/" target="_blank">
+              <div class="text">
+                <div class="title">4K123</div>
+              </div>
+              </a>
+              <a href="https://www.dytt8.net/" target="_blank">
+              <div class="text">
+                <div class="title">电影天堂</div>
+              </div>
+              </a>
+              <a href="http://m.iptv444.com/" target="_blank">
+              <div class="text">
+                <div class="title">电视在线直播(手机)</div>
+              </div>
+              </a>
+              <a href="https://ailongmiao.com/movie/" target="_blank">
+              <div class="text">
+                <div class="title">龙猫影视导航</div>
+              </div>
+              </a>
+              <a href="https://video.bqrdh.com/" target="_blank">
+              <div class="text">
+                <div class="title">不求人影视资源导航</div>
+              </div>
+              </a>
+              <a href="http://www.rarbt.fun/" target="_blank">
+              <div class="text">
+                <div class="title">rarbtv电影资源</div>
+              </div>
+              </a>
+              <a href="https://tv.cctv.com/yxg/" target="_blank">
+              <div class="text">
+                <div class="title">央视片库_纪录片</div>
+              </div>
+              </a>
+              <a href="https://mp4fan.org/" target="_blank">
+              <div class="text">
+                <div class="title">高清MP4粉</div>
+              </div>
+              </a>
+              <a href="https://www.1905.com/mdb/film/?fr=homepc_menu_mdb" target="_blank">
+              <div class="text">
+                <div class="title">1905影库</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          <!-- 分类分割线 -->
+          <div class="category">
+            <h2>在线图书</h2>
+            <div class="links">
+              <a href="https://www.shidianguji.com/" ADD_DATE="1680012999" target="_blank">
+              <div class="text">
+                <div class="title">识典古籍</div>
+              </div>
+              </a>
+              <a href="https://wenyuan.aliyun.com/" ADD_DATE="1680013157" target="_blank">
+              <div class="text">
+                <div class="title">汉典重光：达摩院</div>
+              </div>
+              </a>
+              <a href="https://new.shuge.org/" ADD_DATE="1680013206" target="_blank">
+              <div class="text">
+                <div class="title">书格</div>
+              </div>
+              </a>
+              <a href="https://www.ageeye.cn/" ADD_DATE="1680013240" target="_blank">
+              <div class="text">
+                <div class="title">观沧海 - 地图分享知识</div>
+              </div>
+              </a>
+              <a href="http://read.nlc.cn/" ADD_DATE="1680017103" target="_blank">
+              <div class="text">
+                <div class="title">中国国家图书馆</div>
+              </div>
+              </a>
+              <a href="https://www.nbfox.com/" ADD_DATE="1680024381" target="_blank">
+              <div class="text">
+                <div class="title">高清名画</div>
+              </div>
+              </a>
+              <a href="https://basic.smartedu.cn/" ADD_DATE="1690004672" target="_blank">
+              <div class="text">
+                <div class="title">国家中小学智慧教育平台</div>
+              </div>
+              </a>
+              <a href="https://www.shuxiangjia.cn/" ADD_DATE="1705584755" target="_blank">
+              <div class="text">
+                <div class="title">书享家_电子书下载导航</div>
+              </div>
+              </a>
+              <a href="https://www.book123.info/" ADD_DATE="1705586392" target="_blank">
+              <div class="text">
+                <div class="title">无名图书 | 一个好看的电子书网站</div>
+              </div>
+              </a>
+              <a href="https://artvee.com/" ADD_DATE="1725379287" target="_blank">
+              <div class="text">
+                <div class="title">Artvee</div>
+                <div class="description">艺术油画站</div>
+              </div>
+              </a>
+              <a href="https://web.archive.org/" ADD_DATE="1725379394" target="_blank">
+              <div class="text">
+                <div class="title">Archive</div>
+                <div class="description">互联网档案馆 全球图书报刊</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          <!-- 分类分割线 -->
+          <div class="category">
+            <h2>Ai配音</h2>
+            <div class="links">
+              <a href="https://speech.microsoft.com/audiocontentcreation" ADD_DATE="1678954225" target="_blank">
+              <div class="text">
+                <div class="title">微软语音</div>
+              </div>
+              </a>
+              <a href="https://freetts.com/#ssml" ADD_DATE="1680014456" target="_blank">
+              <div class="text">
+                <div class="title">Free TTS | 语音合成标记语言</div>
+              </div>
+              </a>
+              <a href="https://uberduck.ai/" ADD_DATE="1680014756" target="_blank">
+              <div class="text">
+                <div class="title">Uberduc</div>
+              </div>
+              </a>
+              <a href="https://peiyin.xunfei.cn/make" ADD_DATE="1681234157" target="_blank">
+              <div class="text">
+                <div class="title">讯飞配音</div>
+              </div>
+              </a>
+              <a href="https://www.iflyrec.com/" ADD_DATE="1681234681" target="_blank">
+              <div class="text">
+                <div class="title">讯飞听见</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          <!-- 分类分割线 -->
+          <div class="category">
+            <h2>资料收藏</h2>
+            <div class="links">
+              <a href="https://shop301308.youzan.com/v2/showcase/category?alias=CeBWOwvKQ4&banner_id=f.88621175~image_ad.1~0~sCtxjOaT&reft=1623574688368&spm=m853679534005813248.subscribe.youzan~qr~701_f.88621175&sf=wx_sm&is_share=1&shopAutoEnter=1&share_cmpt=native_wechat&from_uuid=0c9c93a2-7e79-d2c6-8823-94195a736b3a" ADD_DATE="1719412896" target="_blank">
+              <div class="text">
+                <div class="title">乐高图纸2</div>
+              </div>
+              </a>
+              <a href="https://shop301308.m.youzan.com/v2/feature/wxVL2ZAcKN?sf=wx_sm&is_share=1&shopAutoEnter=1&share_cmpt=native_wechat&from_uuid=0c9c93a2-7e79-d2c6-8823-94195a736b3a&is_silence_auth=1" ADD_DATE="1719412938" target="_blank">
+              <div class="text">
+                <div class="title">乐高图纸1</div>
+              </div>
+              </a>
+              <a href="https://www.eventwang.cn/Wap/DesignResource/index" target="_blank">
+              <div class="text">
+                <div class="title">全案-来自活动汪</div>
+              </div>
+              </a>
+              <a href="https://www.kancloud.cn/bigdongdong/armgear/2501647/" target="_blank">
+              <div class="text">
+                <div class="title">BigDD</div>
+              </div>
+              </a>
+              <a href="https://www.betopgame.com/instruct/#/device/307/0" ADD_DATE="1693487919" target="_blank">
+              <div class="text">
+                <div class="title">北通蝙蝠4说明书</div>
+              </div>
+              </a>
+              <a href="https://weibo.com/vposy" ADD_DATE="1681235976" target="_blank">
+              <div class="text">
+                <div class="title">vposy</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          <!-- 分类分割线 -->
+          <div class="category">
+            <h2>Minecraft</h2>
+            <div class="links">
+              <a href="https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki" ADD_DATE="1680026508" target="_blank">
+              <div class="text">
+                <div class="title">Wiki</div>
+              </div>
+              </a>
+              <a href="https://www.chunkbase.com/apps/seed-map#666197150" ADD_DATE="1680026579" target="_blank">
+              <div class="text">
+                <div class="title">Seed Map</div>
+              </div>
+              </a>
+              <a href="https://www.minecraft.net/zh-hans/download/server/bedrock/" ADD_DATE="1680026868" target="_blank">
+              <div class="text">
+                <div class="title">Bedrock Server</div>
+              </div>
+              </a>
+              <a href="https://www.minecraftplot.com/" ADD_DATE="1680027194" target="_blank">
+              <div class="text">
+                <div class="title">安卓客户端</div>
+              </div>
+              </a>
+              <a href="https://www.minecraftzw.com/" ADD_DATE="1680027266" target="_blank">
+              <div class="text">
+                <div class="title">中文站</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          
+          <!-- 分类分割线 -->
+          <div class="category">
+            <h2>内网穿透备用</h2>
+            <div class="links">
+              <a href="https://zgopenwrt.kooldns.cn/" ADD_DATE="1681236106" target="_blank">
+              <div class="text">
+                <div class="title">openwrt</div>
+              </div>
+              </a>
+              <a href="https://zg1029qts.kooldns.cn/" ADD_DATE="1681236129" target="_blank">
+              <div class="text">
+                <div class="title">威联通</div>
+              </div>
+              </a>
+              <a href="https://zg1029qts.kooldns.cn/photo/" ADD_DATE="1681236172" target="_blank">
+              <div class="text">
+                <div class="title">photo</div>
+              </div>
+              </a>
+              <a href="https://www.ddnsto.com/app/#/devices" ADD_DATE="1681236201" target="_blank">
+              <div class="text">
+                <div class="title">DDNSTO</div>
+              </div>
+              </a>
+              <a href="http://zgqts.myqnapcloud.cn:5000/cgi-bin/" ADD_DATE="1681236225" target="_blank">
+              <div class="text">
+                <div class="title">威联通云连</div>
+              </div>
+              </a>
+              <a href="https://hsk.oray.com/console/manage/" ADD_DATE="1681236249" target="_blank">
+              <div class="text">
+                <div class="title">花生壳</div>
+              </div>
+              </a>
+              <a href="https://www.ip111.cn/" ADD_DATE="1720681278" target="_blank">
+              <div class="text">
+                <div class="title">显示查询自己的IP地址</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          <!-- 分类分割线 -->
+          <div class="category">
+            <h2>AI工具</h2>
+            <div class="links">
+              <a href="https://www.liblib.art/" ADD_DATE="1720251525" target="_blank">
+              <div class="text">
+                <div class="title">LiblibAI</div>
+                <div class="description">AI创作分享平台</div>
+              </div>
+              </a>
+              <a href="https://d.design" ADD_DATE="1680616128" target="_blank">
+              <div class="text">
+                <div class="title">堆友</div>
+              </div>
+              </a>
+              <a href="https://www.bing.com/" target="_blank">
+              <div class="text">
+                <div class="title">New Bing</div>
+              </div>
+              </a>
+              <a href="https://https://yiyan.baidu.com/" target="_blank">
+              <div class="text">
+                <div class="title">文心一言</div>
+              </div>
+              </a>
+              <a href="https://www.ainavpro.com/" ADD_DATE="1682699646" target="_blank">
+              <div class="text">
+                <div class="title">AI导航</div>
+              </div>
+              </a>
+              <a href="https://nenly.notion.site/nenly/017c3341c8b84a7ebb4c2cb16f36e28f?v=8d3885a8404b4f27a998d03b23a87f19" ADD_DATE="1683818877" target="_blank">
+              <div class="text">
+                <div class="title">SD课程资料</div>
+              </div>
+              </a>
+              <a href="https://civitai.com/" ADD_DATE="1683819065" target="_blank">
+              <div class="text">
+                <div class="title">Civitai</div>
+              </div>
+              </a>
+              <a href="https://wolfchen.top/tag/" ADD_DATE="1684155624" target="_blank">
+              <div class="text">
+                <div class="title">NovelAI tag在线生成器</div>
+              </div>
+              </a>
+              <a href="https://app.leonardo.ai/" ADD_DATE="1684171829" target="_blank">
+              <div class="text">
+                <div class="title">leonardo.ai</div>
+              </div>
+              </a>
+              <a href="http://www.atoolbox.net/Tool.php?Id=1101" ADD_DATE="1684337295" target="_blank">
+              <div class="text">
+                <div class="title">SD提示词生成器</div>
+              </div>
+              </a>
+              <a href="https://ai.dawnmark.cn/" ADD_DATE="1684337321" target="_blank">
+              <div class="text">
+                <div class="title">AI词汇加速器</div>
+              </div>
+              </a>
+              <a href="https://sleepy-oyster-204.notion.site/hanfu-e7a2aab3ea58451bbe2400bb08955bb6" ADD_DATE="1684828824" target="_blank">
+              <div class="text">
+                <div class="title">汉服tag</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          <!-- 分类分割线 -->
+          <div class="category">
+            <h2>电脑/系统</h2>
+            <div class="links">
+              <a href="https://docs.qq.com/sheet/DVll1U0NtalVCbFN3" ADD_DATE="1681922122" target="_blank">
+              <div class="text">
+                <div class="title">电脑硬件团价格表</div>
+              </div>
+              </a>
+              <a href="https://www.cpubenchmark.net/" ADD_DATE="1681922505" target="_blank">
+              <div class="text">
+                <div class="title"> CPU数据库</div>
+              </div>
+              </a>
+              <a href="https://www.maxon.net/en/downloads/cinebench-r23-downloads" ADD_DATE="1683925154" target="_blank">
+              <div class="text">
+                <div class="title">Cinebench R23 down</div>
+              </div>
+              </a>
+              <a href="https://hellowindows.cn/" ADD_DATE="1685424848" target="_blank">
+              <div class="text">
+                <div class="title">HelloWindows系统下载仓储站</div>
+              </div>
+              </a>
+              <a href="https://www.gobing.cn/index" ADD_DATE="1693487960" target="_blank">
+              <div class="text">
+                <div class="title">Go柄网</div>
+              </div>
+              </a>
+              <a href="https://amatrixap.club/" ADD_DATE="1708284041" target="_blank">
+              <div class="text">
+                <div class="title">MaTrix</div>
+              </div>
+              </a>
+              <a href="https://tieba.baidu.com/p/5005825360?see_lz=1&pn=2" ADD_DATE="1715191208" target="_blank">
+              <div class="text">
+                <div class="title">CPU天梯图更新贴</div>
+              </div>
+              </a>
+              <a href="https://ping.chinaz.com/" ADD_DATE="1724166236" target="_blank">
+              <div class="text">
+                <div class="title">站长ping</div>
+              </div>
+              </a>
+              <a href="https://my.zerotier.com/network/3efa5cb78a1a800f" ADD_DATE="1726072614" target="_blank">
+              <div class="text">
+                <div class="title">ZeroTier Central</div>
+              </div>
+              </a>
+              <!-- 更多链接 -->
+            </div>
+          </div>
+          <!-- 分类分割线 -->
+          <!-- 更多分类 -->
+        </div>
+        <!-- 导航地址 end -->
+        
+      </div>
+    </div>
+    <!-- 展开导航 end -->
+  </main>
+  <footer>
+    <a href="https://zg1029.top/"><img src="static/img/logo/thymb.png" alt="" width="64"></a>
+    <br>
+    <a href="https://zg1029.top/sjz/">公司导航</a>
+    &nbsp;
+    <a href="https://zg1029.top/gy/">广益导航</a>
+    &nbsp;
+    <a href="https://zg1029.top/yt/">黄蓝导航</a>
+    &nbsp;
+    <br>
+    本网页由私人部署，不为他人提供服务，请勿收藏或分享 
+    <a href="http://zg1029.top/">Copyright © 2022-2024 Hosted by ZG</a>
+    <a href="https://beian.miit.gov.cn/" target="_blank">湘ICP备2023000655号-1</a>
+  </footer>
+</div>
+<script src="./static/js/jquery.min.js"></script>
+<script src="./static/js/keyword.js"></script>
+<script src="./static/js/Night.js"></script>
+</body>
+</html>
